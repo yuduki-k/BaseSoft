@@ -33,7 +33,7 @@ function user_authorization()
           }
         }
     } catch (PDOException $e2) {
-        exit("検索エラー:{$e2->getMessage()}");
+        exit("Connect_Error:{$e2->getMessage()}");
     }
     if($_POST['username']==null || $pass==null){
 
